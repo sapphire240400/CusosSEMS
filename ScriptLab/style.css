@@ -1,0 +1,41 @@
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid #991526;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #991526;
+  color: white;
+}
+
+/* Styles for buttons */
+.ms-Button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ms-Button:hover {
+  background-color: #45a049;
+}
+
+.ms-Button-label {
+  font-weight: bold;
+}
+
