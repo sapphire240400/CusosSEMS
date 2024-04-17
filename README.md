@@ -11,11 +11,11 @@ Los archivos dentro de la carpeta son:
         Las imagenes aun no estan actualizadas, pero se utilizaran las mismas con otros colores!
 
 
-He añadido una carpeta llamada 'LaBScript' dentro de ella se encuentran los archivos necesarios para instalar el complemento en word. 
+He añadido una carpeta llamada 'ScriptLab' dentro de ella se encuentran los archivos necesarios para instalar el complemento en word. 
 Los pasos son los siguientes:
                         
 
-    1. Instalar el complemento LabScript
+    1. Instalar el complemento ScriptLab
     2. Una vez instalado abrirlo en la aplicación word
     3. Seleccionar 'CODE' dentro de las ventanas disponibles.
     4. Copiar y pegar el contenido del archivo 'script,js' en 'SCRIPT', el contenido del archivo 'index.html' dentro de 'HTML' y el contenido de 'style.css' dentro de 'CSS'.
