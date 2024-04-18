@@ -396,8 +396,9 @@ color: white;}
     justify-content: space-around;
     background-color: #691C32;
     color: white;
-     padding: 2px 16px;
+    padding: 2px 16px;
     margin: 10px;
+    font-size: 18px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
