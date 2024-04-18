@@ -148,10 +148,11 @@ img{
 }
 
 .titulo-act{
-  font-size: 20px;
+/*  font-size: 20px;*/
   background-color: #691C32;
   border-radius: 8px;
   color: white;
+  padding: 3px;
   margin-bottom: 13px;
   font-weight: bold;
   padding-left: inherit;
@@ -395,7 +396,7 @@ color: white;}
     justify-content: space-around;
     background-color: #691C32;
     color: white;
-    padding: 8px 16px;
+/*    padding: 8px 16px;*/
     margin: 10px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -653,10 +654,10 @@ color: white;}
     color: white;
     font-size: 18px;
     border: none;
-    padding: 10px 20px;
+    /*padding: 10px 20px;
     margin: 10px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 10px;*/
     border-top-right-radius: 18px;
     border-left-raduis: 20px;
     border-top-left-radius: 22px;
