@@ -18,254 +18,380 @@
 <body>
 
 <!--Inicia de copia y pega desde word-->
+<div class="main-curso" style="margin-down: 0px; margin-top: 0px; margin-left: 0px; margin-right: 0px;">
 
-
-<div class=" main-curso" style="margin-down: 0px; margin-top: 0px; margin-left: 0px; margin-right: 0px;">
-
-<!-- ===== 
+    <!-- ===== 
     ;;;;;;;;;;;;;;;;;;;;;;;
     ;;       BANNER      ;;    
     ;;;;;;;;;;;;;;;;;;;;;;;
 ===== -->
     <div class="titulo-c">
-        <img style="  max-width: 100%; padding-top: 10px; border-bottom-right-radius: 28px;" src="img/Curso_docentessss_Banner.png">
+        <img style="max-width: 100%; padding-top: 10px; border-bottom-right-radius: 28px;" src="img/Curso_docentessss_Banner.png">
     </div>
 
-<!-- ===== 
+    <br>
+
+    <!-- ===== 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     ;;       INDICADOR SECCION       ;;    
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ===== -->
-    <div class="ind_sect"> Tema</div> 
+    <div class="ind_sect">Titulo</div> <br>
+
+    <br>
+
+<!-- ===== 
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;       TABS MADRE         ;;    
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+===== -->
+
+    <div class="tabs" id="myTabs">
+        <!-- MENU FLECHAS -->
+        <button class="pre" onclick="showPreviousTab()">&lt;</button>
+        <!-- MENU FLECHAS -->
+
+
+        <!-- Inicia Madre#1 -->
+        <div class="tab-button-curso" onclick="showTab(event)">
+
+            <div class="dropdown_curso"> 
+                <button class="dropbtn">MADRE #1 <br> 
+                    Presentacion 
+                    <img src="img/CVD_ICO_DROPDOWN.png" style="max-width: 22px;">  <!-- Icono dropdown  -->
+                </button>
+                <!-- Dropdown MADRE #1 -->
+                <div class="dropdown_curso-content">
+                    <div class="button-container-subtabs">
+                        <button class="toggle-button-subtabs " data-target="content-subtabs">[Hija 1] Guía académica</button>
+                        <button class="toggle-button-subtabs" data-target="content-subtabs">[Hija 2]Introducción</button>
+                    </div>
+                </div>
+                <!-- Termina Dropdown MADRE #1 -->
+            </div>
+
+        </div>
+        <!-- Termina Madre#1 -->
+        
+        <!-- Inicia Madre#2 -->
+        <div class="tab-button-curso" onclick="showTab(event)"> MADRE #2 <br> 
+        Conceptos Clave 
+        </div>
+        <!-- Termina Madre#2 -->
+
+
+        <!-- Inicia Madre#3 -->
+        <div class="tab-button-curso" onclick="showTab(event)">
+
+            <div class="dropdown_curso"> 
+                <button class="dropbtn">MADRE #3 <br> 
+                    Transformando la enseñanza   
+                    <img src="img/CVD_ICO_DROPDOWN.png" style="max-width: 22px;">  <!-- Icono dropdown  -->
+                </button>
+                <!-- Dropdown MADRE #1 -->
+                <div class="dropdown_curso-content">
+                    <div class="button-container-subtabs">
+                        <button class="toggle-button-subtabs " data-target="content-subtabs">[Hija 1] Metodologías activas para la enseñanza de las ciencias naturales, experimentales y tecnología</button>
+                        <button class="toggle-button-subtabs" data-target="content-subtabs">[Hija 2]Acciones para la evaluación</button>
+                    </div>
+                </div>
+                <!-- Termina Dropdown MADRE #1 -->
+            </div>
+
+
+        </div>
+        <!-- Termina Madre#3 -->
+        
+
+        <!-- Inicia Madre#4 -->
+        <div class="tab-button-curso" onclick="showTab(event)">MADRE #4 <br>Baúl conceptual
+
+        </div>
+        <!-- Termina Madre#4 -->
+        
+
+        <!-- Inicia Madre#5 -->
+        <div class="tab-button-curso" onclick="showTab(event)">
+
+            <div class="dropdown_curso"> 
+                <button class="dropbtn">MADRE #5 <br> 
+                    Fortaleciendo la práctica docente 
+                    <img src="img/CVD_ICO_DROPDOWN.png" style="max-width: 22px;">  <!-- Icono dropdown  -->
+                </button>
+                <!-- Dropdown MADRE #1 -->
+                <div class="dropdown_curso-content">
+                    <div class="button-container-subtabs">
+                        <button class="toggle-button-subtabs " data-target="content-subtabs">[Hija 1] Reflexión de la práctica </button>
+                        <button class="toggle-button-subtabs" data-target="content-subtabs">[Hija 2]Material de apoyo</button>
+                    </div>
+                </div>
+                <!-- Termina Dropdown MADRE #1 -->
+            </div>
+
+
+        </div>
+        <!-- Termina Madre#5 -->
+        
+
+        <!-- Inicia Madre#6 -->
+        <div class="tab-button-curso" onclick="showTab(event)">MADRE #6 <br>Cierre
+
+        </div>
+        <!-- Termina Madre#6 -->
+        
+
+        <!-- MENU FLECHAS -->
+        <button class="next" onclick="showNextTab()">&gt;</button>
+        <!-- MENU FLECHAS -->
+    </div>
+
 
 <!-- ===== 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     ;;       CONTENIDO UNIDADES         ;;    
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ===== -->
-
-    <div class="tabs" id="myTabs">
-
-        <!-- MENU FLECHAS -->
-        <button class="pre" onclick="showPreviousTab()"> &lt;</button>
-        <!-- MENU FLECHAS -->
-
-        <!--Tabs -->
-        <div class="tab-button-curso" onclick="showTab(event)">MADRE#1 <br> Presentación</div>
-        <div class="tab-button-curso" onclick="showTab(event)">MADRE#2 <br>Cimientos pedagógicos </div>
-        <div class="tab-button-curso" onclick="showTab(event)">MADRE#3 <br>Transformando la Enseñanza</div>
-        <div class="tab-button-curso" onclick="showTab(event)">MADRE#4 <br>Baúl conceptual</div>
-        <div class="tab-button-curso" onclick="showTab(event)">MADRE#5 <br>Fortaleciendo la Práctica Docente</div>
-        <div class="tab-button-curso" onclick="showTab(event)">MADRE#6 <br>Cierre</div>
-        <!-- MENU FLECHAS -->
-        <button class="next" onclick="showNextTab()"> &gt; </button>
-        <!-- MENU FLECHAS -->
-
-    </div>
-
-
     <div class="tab-wrapper_act">
         <div id="content">
 
-            <!-- MADRE 1 -->
+            <!-- MODULO 1 -->
+            <div class="tab-content-curso" style="display: none;">
+                
+                <!-- Subtema [Hija 1] Guía académica -->
+                <div id="content-subtabs" class="content-subtabs active-content-subtabs">
+                    <div class="seccion_import" >
+                        <!-- ===== 
+                            ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                            ;;       Guia academica    ;;    
+                            ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                        ===== --> 
+                        <div class="cuestionario_imp">
+                            <div class="titulo" >  Guía académica</div>        
+                            <a href=""> <img src="img/lectura.png" style="max-width: 105px; padding-top: 15px;">    </a>  
+                            <p style="text-align: center;">Revisa la Guía académica de la semana 1</p>      
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+                <!-- Subtema [Hija 2]Introducción -->
+                <div id="content-subtabs" class="content-subtabs">
+                   HIJA 2
+                </div>
+
+
+
+
+            </div>
+
+            <!-- / MODULO 1 -->
+
+            <!-- MODULO 2 -->
             <div class="tab-content-curso" style="display: none;">
 
+                <div class="seccion_import" >
+                    <!-- ===== 
+                        ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                        ;;       Progresiones    ;;    
+                        ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                    ===== --> 
+                    <div class="cuestionario_imp">
+                        <div class="titulo" >  Progresiones</div>        
+                        <a href=""> <img src="img/CVD_ICO_CUESTIONARIO.png" style="max-width: 105px; padding-top: 15px;">   </a>        
+                    </div>
+
+                    <!-- ===== 
+                        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                        ;;   Herramientas didácticas   ;;    
+                        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                    ===== --> 
+                    <div class="manual_imp">
+                        <div class="titulo" >   Herramientas didácticas   </div>
+                        <a href=""> <img src="img\CVD_ICO_MANUALpng.png" style="max-width: 105px; padding-top: 15px;">  </a>            
+                    </div>
+                
+                </div>
+
+            </div>
+            <!-- /MODULO 2 -->
 
 
 
-                <!-- CASO #1 EN CASO DE QUE LA HIJA NO TENGA SUBTEMAS -->
-                <div class="button-container-subtabs">
-                    <button class="toggle-button-subtabs " data-target="content-subtabs">Hija#1 Guía académica</button>
-                    <button class="toggle-button-subtabs" data-target="content-subtabs">Hija#2 Introducción</button>
+            <!-- MODULO 3 -->
+            <div class="tab-content-curso" style="display: none;">
+                
+                <!-- Subtema [Hija 1] -->
+                <div id="content-subtabs" class="content-subtabs active-content-subtabs">
+                    HIJA 3.1
+                    Texto
 
-
-                        <!-- CASO #2 EN CASO DE QUE LA HIJA TENGA SUBTEMAS -->
-                    <div class="dropdown_curso"> 
-
-                        <button class="dropbtn">
-                            Hija#1 Guía académica 
-                            <img src="img/CVD_ICO_DROPDOWN.png" style="max-width: 22px;"> 
-                        </button>
-
-                            <div class="dropdown_curso-content">
-                                <div class="button-container-subtabs">
-                                    <button class="toggle-button-subtabs " data-target="content-subtabs">Hija#1 Guía académica SUBTEMA1</button>
-                                    <button class="toggle-button-subtabs" data-target="content-subtabs">Hija#2 Introducción SUBTEMA1</button>
-                                </div>
-                            </div>  
+                    <div class="seccion_act" >
+                        <div class="sec_1">
+                            <div class="titulo-act" > #Actividad</div>  
+                                <strong>
+                                    <p style="text-align:center!important">Titulo</p>
+                                </strong>
+                                
+                                <center>
+                                    <a href=""> <img src="img\CVD_ICO_ACTIVIDAD.png" style="max-width: 120px; padding-top: 10px;">  </a>    
+                                </center>   
+                                <br>
+                                <p style="text-align: justify;">Revisa el material para conocer el Aprendizaje Basado en Problemas (ABP)</p>
+                        </div>
                     </div>
 
                 </div>
 
 
-
-                <!-- CONTENIDO CASO #1 SUBTEMAS -->
-                <div id="content-subtabs" class="content-subtabs active-content-subtabs ">
-                   Contenido Hija#1 Guía académica 
-                </div>
+                <!-- Subtema [Hija 2]-->
                 <div id="content-subtabs" class="content-subtabs">
-                   Contenido Hija#2 Guía académica 
+                   HIJA 3.2
+                    Texto
+
+                    <div class="seccion_act" >
+                        <div class="sec_1">
+                            <div class="titulo-act" > #Actividad</div>  
+                                <strong>
+                                    <p style="text-align:center!important">Titulo</p>
+                                </strong>
+                                
+                                <center>
+                                    <a href=""> <img src="img\CVD_ICO_ACTIVIDAD.png" style="max-width: 120px; padding-top: 10px;">  </a>    
+                                </center>   
+                                <br>
+                                <p style="text-align: justify;">Revisa el material para conocer el Portafolio de evidencias o de aprendizaj</p>
+                        </div>
+                    </div>
+
+
                 </div>
-
-
-
-                <!-- CONTENIDO CASO #2 SUBTEMAS -->
-                <div id="content-subtabs" class="content-subtabs">
-                   Contenido Hija#1 Guía académica SUBTEMA1
-                </div>
-
-                <!-- Subtema1.2 -->
-                <div id="content-subtabs" class="content-subtabs">
-                Contenido Hija#2 Introducción SUBTEMA1
-                </div>
-
-
 
 
             </div>
-            <!-- / MADRE 1 -->
+            <!-- /MODULO 3 -->
 
 
 
-            <!-- MADRE 2 -->
+            <!-- MODULO 4 -->
             <div class="tab-content-curso" style="display: none;">
-                <div class="button-container-subtabs">
-                    <button class="toggle-button-subtabs " data-target="content-subtabs">Hija#1 Progresiones</button>
-                    <button class="toggle-button-subtabs" data-target="content-subtabs">Hija#2 Herramientas didácticas</button>
-                </div>
-
-                <div id="content-subtabs" class="content-subtabs">
-                   Contenido Hija#1 Progresiones
-                </div>
-
-                <!-- Subtema1.2 -->
-                <div id="content-subtabs" class="content-subtabs">
-                Contenido Hija#2 Herramientas didácticas
-                </div>
-
+                Puro texto xd
             </div>
-            <!-- /MADRE 2 -->
+            <!-- /MODULO 4 -->
 
 
 
-            <!-- MADRE 3 -->
+            <!-- MODULO 5 -->
             <div class="tab-content-curso" style="display: none;">
                 
-                <div class="button-container-subtabs">
-                    <button class="toggle-button-subtabs " data-target="content-subtabs">Hija#1 Metodologías activas para la enseñanza</button>
-                    <button class="toggle-button-subtabs" data-target="content-subtabs">Hija#2 Acciones para la evaluación</button>
+                <!-- Subtema [Hija 1] -->
+                <div id="content-subtabs" class="content-subtabs active-content-subtabs">
+                    HIJA 5.1
+
+                    <div class="tablas">
+                        <div class="table-responsive">
+                            <table class="table"style="width: 100% !important;">
+                                <thead style="text-align: center;color: #fff; background-color: #691C32; padding-left: 20px; padding-right: 20px; ">
+                                    <tr>
+                                        <th scope="col">Actividad</th>
+                                        <th scope="col">Instrumento de evaluación </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <p>text</p>
+                                        </th>
+
+                                        <td>
+                                            <center>    text   </center>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">
+                                            <p>text</p>
+                                        </th>
+
+                                        <td>
+                                            <center>    text   </center>
+                                        </td>
+                                    </tr>
+                 
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                    </div>
+
+
+
                 </div>
 
+                <!-- Subtema [Hija 2]-->
                 <div id="content-subtabs" class="content-subtabs">
-                   Contenido Hija#1
+                HIJA 5.2
+
+                    <div class="table-responsive">
+                        <table class="table"style="width: 100% !important;">
+                            <thead style="text-align: center;color: #fff; background-color: #691C32; padding-left: 20px; padding-right: 20px; ">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Material de apoyo </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Texto</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Texto</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Texto</td>
+                                </tr>                    
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
 
-                <!-- Subtema1.2 -->
-                <div id="content-subtabs" class="content-subtabs">
-                Contenido Hija#2
-                </div>
             </div>
-            <!-- /MADRE 3 -->
+            <!-- /MODULO 5 -->
 
 
 
-            <!-- MADRE 4 -->
+            <!-- MODULO 6 -->
             <div class="tab-content-curso" style="display: none;">
-                (Se desarrolla el contenido disciplinar considerando las categorias, subcategorias y progresiones)
+                modulo6
             </div>
-            <!-- /MADRE 4 -->
+            <!-- /MODULO 6 -->
 
 
 
-            <!-- MADRE 5 -->
-            <div class="tab-content-curso" style="display: none;">
-                <div class="button-container-subtabs">
-                    <button class="toggle-button-subtabs " data-target="content-subtabs">Semana 1, 3 y 5</button>
-                    <button class="toggle-button-subtabs" data-target="content-subtabs">Semana 2, 4 y 6</button>
-                </div>
-
-                <div id="content-subtabs" class="content-subtabs">
-                   Contenido Hija#1
-                </div>
-
-                <!-- Subtema1.2 -->
-                <div id="content-subtabs" class="content-subtabs">
-                Contenido Hija#2
-                </div>
-
+            <div class="animate-bounce ...">
+                <button onclick="scrollToTop()" id="back-to-top-curso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"></path>
+                    </svg>
+                </button>
             </div>
-            <!-- /MADRE 5 -->
-
-
-
-            <!-- MADRE 6 -->
-            <div class="tab-content-curso" idstyle="display: none;">
-               CIERRE
-            </div>
-            <!-- /MADRE 6 -->
-
-
-        <div class="animate-bounce ...">
-  
-            <button onclick="scrollToTop()" id="back-to-top-curso">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"></path>
-                </svg>
-            </button>
-
-        </div>
-
-
-
-
-        <div class="animate-bounce ...">
-            <button onclick="scrollToTop()" id="back-to-top-curso">
-                <img src="img/uparrow.png" style="max-width: 20px;">
-            </button>
-        </div>
-
-
-
-
-
         </div> <!-- / content -->
     </div> <!--  /tab-wrapper_act -->
-
-
-
-
-    <!--Fin de copia y pega desde word-->
-
-
-<!--
-    <script>
-        var style = document.createElement("link");
-        document.head.appendChild(style);
-        style.setAttribute("rel", "stylesheet");
-        style.setAttribute("href",
-            "https://uaqedvirtual.uaq.mx/capacitacion/pluginfile.php/9211/mod_folder/content/0/style2.css"
-        );
-    </script>
- 
-    <script src="https://uaqedvirtual.uaq.mx/capacitacion/pluginfile.php/9211/mod_folder/content/0/tabs_final_12.js"></script>
-    <script src="https://uaqedvirtual.uaq.mx/capacitacion/pluginfile.php/9211/mod_folder/content/0/bttnAct.js"></script>
-    <script src="https://uaqedvirtual.uaq.mx/capacitacion/pluginfile.php/9211/mod_folder/content/0/backtotop.js"></script> 
-    <script src="https://uaqedvirtual.uaq.mx/capacitacion/pluginfile.php/9211/mod_folder/content/0/script_curso.js"></script>
-
-    <script src="js/tabs_final_12.js"></script>
-    <script src="js/bttnAct.js"></script>
-    <script src="js/backtotop.js"></script> 
--->
 </div><!-- /End  main-curso -->
-
-
 
 
 <script src="js/script_curso.js"></script>
 <script src="js/tabs_final_12.js"></script>
 <script src="js/bttnAct.js"></script>
 <script src="js/backtotop.js"></script>
-
 
 </body>
 </html>
