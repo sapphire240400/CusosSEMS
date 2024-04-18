@@ -396,7 +396,7 @@ color: white;}
     justify-content: space-around;
     background-color: #691C32;
     color: white;
-/*    padding: 8px 16px;*/
+     padding: 2px 16px;
     margin: 10px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -723,3 +723,49 @@ color: white;}
   box-shadow: 1px 11px 6px 1px #C9C9C9;
 }
 
+
+
+
+/*--------------------------------------------------------------
+    # CONTENIDO DESPLEGABLE EN UN DROPDOWN QUE NI SIQUIERA ESTABA PENSADO EN PRIMER LUGAR 
+--------------------------------------------------------------*/
+.dropdown-subtema {
+    position: relative;
+    display: inline-block;
+    width: 66.66%; 
+  }
+
+  .dropdown-subtema-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%; /* Llenar el espacio disponible */
+    left: 0; /* Centrar el contenido */
+  }
+
+  .dropdown-subtema-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-subtema-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown-subtema:hover .dropdown-subtema-content {
+    display: block;
+  }
+
+  .dropbtn-subtema {
+    width: 100%; 
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: none;
+    font-size: 18px;
+    padding: 4px;
+  }
