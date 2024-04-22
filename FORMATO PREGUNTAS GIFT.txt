@@ -1,5 +1,5 @@
 '''
-
+Al finalizar guardarlo con formato .utf8
 // Formato GIFT
 
 
