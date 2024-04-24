@@ -1,12 +1,13 @@
 /*-----------------------------------------------------------------------------------
               # SECCION CSS CURSO NO EDITAR 
 -------------------------------------------------------------------------------------*/
-.main-curso body { 
+/*.mf body { 
   font-family: 'Montserrat', 
   sans-serif; 
+  font-size: 16px;
   color: #575756 ;
 /*  background-color: #FAF6F0; */
-   }
+  
 
 .main-curso  p {
   margin-left: 12px; 
@@ -24,7 +25,8 @@
 
 .main-curso h1,h2,h3,h4,h5,h6,.font-primary { 
   font-family: "Montserrat", 
-  sans-serif;  }
+  sans-serif; 
+  font-size:18px; }
 
 .main-curso img{
   width: 100%!; 
@@ -35,8 +37,9 @@
               # TITULO
 --------------------------------------------------------------*/
 .ind_sect{
-  padding: 20px;    margin-bottom: 10px;
-  background-image: url('https://citesems1.org/publicdata/CURSO_SEMS_Artes/img/FONDO.png');
+  padding: 20px;    
+  margin-bottom: 10px;
+  background-image: url('https://citesems1.org/publicdata/0CursoVisual/img/FONDO.png');
   background-size: 21vw;
 /*  background-size: cover; */
   background-position: center;
@@ -49,7 +52,7 @@
 
   @media only screen and (max-width: 720px) {       /* For mobile phones: */
   .ind_sect{
-    font-size: 6.5VW;
+/*    font-size: 1.5VW;*/
     font-stretch: ultra-condensed;  } 
   }
 
@@ -124,6 +127,7 @@
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
+  text-align: center;
   justify-content: space-around;
   align-items: stretch;
   flex-direction: column;
@@ -137,11 +141,11 @@
   padding: 3vw; 
   flex: 1; 
   margin-bottom: 1.5vw;
-  text-align: center;
+  
  }
 
 .titulo {
-  font-size: 20px;
+  font-size: 18px;
   background-color: #575756;
 /*  background-color: #2C2B2C;*/
   border-radius: 8px;
@@ -224,12 +228,14 @@
               # SECCION TEXTO IMPORTANTE
 --------------------------------------------------------------*/
 .secc_important_text {
-  margin: 1vw; /* Adjust margin using viewport width units */
-  box-shadow: 0 4px 8px 0 rgba(159, 34, 65, 0.2), 0 6px 20px 0 rgba(237, 17, 93, 0.19);
-  background: linear-gradient(0deg, rgba(210,210,210,1) 0%, rgba(255,255,255,1) 100%);
+  margin: 1vw;
+  margin-right: 4.5vw;
+  margin-left: 4vw;
+  box-shadow: 0 4px 8px 0 rgba(179, 142, 93, 0.2), 0 6px 20px 0 rgba(237, 17, 93, 0.19);
+  background: linear-gradient(0deg, rgba(79, 142, 93, 0.2) 0%, rgba(255,255,255,1) 100%);
   border-radius: 6px;
   border-style: solid;
-  border-color: #9F2241; }
+  border-color: #B38E5D;}
 
 .important_text {
   display: flex;
@@ -258,8 +264,7 @@
   font-size: 1.05vw  */
   padding-top: 1.5vw; 
   text-align: justify;
-  margin: 0.5vw; 
-  font-size: 1.05vw;  }
+  margin: 0.5vw;  }
 
 .container_temario {
     display: flex;
@@ -368,11 +373,14 @@
 --------------------------------------------------------------*/
 .hover-container {
   position: relative;
-  display: inline-block;  }
+  display: inline-block;
+}
 
 .hover-text {
   visibility: hidden;
-  width: 320px;
+  max-width: 500px; /* Increase maximum width for the tooltip */
+  max-height: 300px; /* Set maximum height for the tooltip */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
   background-color: #B38E5D;
   color: #fff;
   text-align: center;
@@ -380,12 +388,14 @@
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  top: -30px;
+  bottom: calc(100% + 10px); /* Position the tooltip above the container */
   left: 50%;
-  transform: translateX(-50%);  }
+  transform: translateX(-50%);
+}
 
 .hover-container:hover .hover-text {
-  visibility: visible;  }
+  visibility: visible;
+}
 
 .glosario {
   border: none;
@@ -393,15 +403,15 @@
   margin-right: 5px;
   border-radius: 5px;
   background-color:#9F2241;
-color: white;}
-
-@media only screen and (max-width: 768px) {       /* For mobile phones: */
-  .hover-text{
-    width: 240px;
-    top: -33px;    }
+  color: white;
 }
 
-
+@media only screen and (max-width: 768px) {
+  .hover-text {
+    max-width: 400px; /* Adjust maximum width for smaller screens */
+    bottom: calc(100% + 10px); /* Adjust position for smaller screens */
+  }
+}
 
 /*--------------------------------------------------------------
               # CONTENIDO UNIDADES
@@ -415,26 +425,25 @@ color: white;}
 
 .tabs {     
   display: flex;
-  /*flex-wrap: wrap;
+  padding: 5px;
+  flex-wrap: wrap;
+/*  flex-wrap: inherit;*/
   justify-content: flex-start;  
-  */background-color: #F4F1EA;  }
+  background-color: #F4F1EA;  }
 
 .tab-button-curso {
     justify-content: space-around;
     background-color: #F4F1EA;
     color: #631A2E;
-    padding: 8px 16px;
-    margin: 10px;
-    font-size: 18px;
-    /*border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;*/
+    padding: 10px 2px;
+    text-align: -webkit-center;
+/*    padding: 8px 16px;*/
+/*    margin: 10px;*/
+    margin: 5px;
+    font-size: 17.5px;
     cursor: pointer;
     transition: background-color 0.3s;   }
 
-/*.tab-button-curso:hover {
-  background:#9F2241;   
-  color:white;  }*/
 
 .tab-button-curso.active {
   background:#9F2241;   
@@ -458,7 +467,7 @@ color: white;}
 
 
 
-  @media only screen and (max-width: 600px) {       /* For mobile phones: */
+  @media only screen and (max-width: 800px) {       /* For mobile phones: */
 
    .tab-wrapper_act p{
       margin-left: 4px;
@@ -487,7 +496,7 @@ color: white;}
 /*--------------------------------------------------------------
   # BOTONES TABS
 --------------------------------------------------------------*/
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     .pre,.next {
       display: inline-block;
       border: none;
@@ -509,7 +518,7 @@ color: white;}
 
   }
 
-  @media only screen and (min-width: 601px) {
+  @media only screen and (min-width: 800px) {
     .pre,.next {
       display: none;  }
   }
@@ -560,9 +569,9 @@ color: white;}
 .toggle-button-subtabs {
   background-color: #F4F1EA;
   color: white;
-  font-size: 18px;
+/*  font-size: 17px;*/
   border: none;
-  padding: 10px 20px;
+/*  padding: 10px 20px;                 ARTES*/ 
   margin: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -575,20 +584,20 @@ color: white;}
 
 .toggle-button-subtabs:hover {
   background: #9F2241;
-  border-color: #9F2241;
+/*  border-color: #9F2241;*/
   color: #FFF;    }
 
 .active-button-subtabs {
-  background: #9F2241;
-  border-color: #9F2241;
+  background: #B38E5D;
+  border-color: #B38E5D;
   color: #FFF;    }
 
 .content-subtabs {
   display: none;
   padding: 20px;
-  margin: 10px;
+  /*margin: 10px;
   margin-left: 32px;
-  margin-right: 32px;
+  margin-right: 32px;*/
   animation: fadeIn; animation-duration: .95s; 
   box-shadow: 0px 7px 10px #f4f1ea;
   border-bottom-right-radius: 19px; }
@@ -623,6 +632,77 @@ color: white;}
   }
 
 
+
+/*--------------------------------------------------------------
+# ESTILO BOTONES BAUL CONCEPTUAL 
+--------------------------------------------------------------*/
+.toggle-button-subtabs-baul{
+background-color: #651E34;
+/*background-color: blue;*/
+    color: white;
+    /* font-size: 18px; */
+    border: none;
+    /* padding: 10px 20px; */
+    padding: 7px 20px;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top-right-radius: 18px;
+    border-left-radius: 20px;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.content-subtabs-baul{
+  display: none;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 32px;
+  margin-right: 32px;
+  animation: fadeIn; animation-duration: .95s; 
+  box-shadow: 0px 7px 10px #f4f1ea;
+  border-bottom-right-radius: 19px;
+}
+
+.active-content-subtabs-baul{
+  display: block; 
+}
+
+.active-button-subtabs-baul, .active-button-subtabs-baul:hover {
+  background: #9F2241;
+  border-color: #9F2241;
+  color: #FFF;    }
+
+.button-container-subtabs-baul{
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+
+
+@media only screen and (max-width: 768px) {       /* For mobile phones: */
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------
     # BACK TO TOP
 --------------------------------------------------------------*/
@@ -633,7 +713,7 @@ color: white;}
   right: 90px;
   z-index: 999;
   padding: 8px 12px;
-  background-color: #F4F1EA;
+  background-color: #9F2241;
   color: white;
   border: none;
   border-radius: 50%;
@@ -695,7 +775,7 @@ color: white;}
 .dropdown_curso button{
     background-color:inherit;
     color: inherit;
-    font-size: 18px;
+/*    font-size: 18px;*/
     border: none;
     /*padding: 10px 20px;
     margin: 10px;
@@ -715,7 +795,7 @@ color: white;}
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  font-size: small; }
+/*  font-size: small; */}
 
 .dropdown_curso-content button {
   height: 100%;
@@ -728,11 +808,11 @@ color: white;}
   border: none;
   text-align: left;
   width: -webkit-fill-available;  }
-
+/*
 .dropdown_curso-content button:hover {
   background-color: #631a2e;
   color: white;
-  width: -webkit-fill-available;
+  width: -webkit-fill-available;*/
 /*  border-radius: 10px;  */  }
 
 .dropdown_curso:hover .dropdown_curso-content {
@@ -814,7 +894,7 @@ color: white;}
     border: none;
     color: #fff;
     background-color: #611a2c;
-    font-size: 18px;
+/*    font-size: 18px;*/
     padding: 4px;
   }
 
@@ -840,9 +920,11 @@ SUBTABS
     .toggle-button-subtabs {
     background-color: #651E34;
     color: white;
-    font-size: 18px;
+/*    font-size: 18px;*/
+/*    max-width: 12%;                  ARTES*/
     border: none;
-    padding: 10px 20px;
+/*    padding: 10px 20px;*/
+    padding: 7px 20px;
     margin: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -854,13 +936,12 @@ SUBTABS
     transition: background-color 0.3s;  }
 
     .toggle-button-subtabs:hover {
-        background: #9F2241;
-        border-color: #9F2241;
+        background: #B38E5D;
         color: #FFF;    }
 
     .active-button-subtabs {
-        background: #9F2241;
-        border-color: #9F2241;
+        background: #B38E5D;
+        border-color: #B38E5D;
         color: #FFF;    }
 
     /* Responsive Styling for Mobile Devices */
