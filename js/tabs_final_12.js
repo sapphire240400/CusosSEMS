@@ -1,24 +1,81 @@
 // Variables globales para manejar las pestañas
 let currentTab = 0;
 
-// Función para mostrar una pestaña específica
-function showTab(tabIndex) {
-    // Ocultar todas las pestañas y desactivar los botones
+// Función adicional al final del HTML (renombrada a showTab)
+function showTab(event) {
+    const button = event.target;
+    const buttonIndex = Array.from(button.parentElement.children).indexOf(button);
+
     const tabContents = document.querySelectorAll('.tab-content-curso');
     const tabButtons = document.querySelectorAll('.tab-button-curso');
-    tabContents.forEach(tab => tab.style.display = 'none');
+
+    tabContents.forEach(tab => {
+        tab.style.display = 'none';
+        tab.classList.remove('active-tab-content');
+    });
     tabButtons.forEach(button => button.classList.remove('active'));
 
-    // Mostrar la pestaña deseada y activar el botón correspondiente
-    tabContents[tabIndex].style.display = 'block';
-    tabButtons[tabIndex].classList.add('active');
+    const activeTabContent = tabContents[buttonIndex - 1];
+    activeTabContent.style.display = 'block';
+    activeTabContent.classList.add('active-tab-content');
+    tabButtons[buttonIndex - 1].classList.add('active');
 
-    // Actualizar el índice de la pestaña activa
-    currentTab = tabIndex;
+    // Encontrar todos los divs 'button-container-subtabs' dentro de los divs 'tab-content-curso'
+    const allButtonContainers = document.querySelectorAll('.button-container-subtabs');
 
-    // Actualizar visibilidad de botones previo y siguiente
-    updateButtonVisibility();
+    // Remover la clase 'active-button-subtabs' de todos los botones excepto del primer botón
+    allButtonContainers.forEach(container => {
+        const buttons = container.querySelectorAll('button');
+        buttons.forEach((btn, index) => {
+            if (index === 0 && container.parentElement === activeTabContent) {
+                btn.classList.add('active-button-subtabs');
+            } else {
+                btn.classList.remove('active-button-subtabs');
+            }
+        });
+    });
+
+    // Encontrar todos los divs 'content-subtabs' dentro de los divs 'tab-content-curso'
+    const allContentSubtabs = document.querySelectorAll('.content-subtabs');
+
+    // Remover la clase 'active-content-subtabs' de todos los divs 'content-subtabs'
+    allContentSubtabs.forEach(contentSubtabs => {
+        contentSubtabs.classList.remove('active-content-subtabs');
+    });
+
+    // Encontrar el primer div 'content-subtabs' dentro del div tab-content-curso activo
+    const contentSubtabs = activeTabContent.querySelector('.content-subtabs');
+    if (contentSubtabs) {
+        contentSubtabs.classList.add('active-content-subtabs');
+    } else {
+        console.error("No se encontró ningún div 'content-subtabs' dentro del div 'tab-content-curso'");
+    }
 }
+
+// Asignar la función showTab al nombre showTab en el ámbito global
+window.showTab = showTab;
+
+// Simular un clic en el primer elemento con la clase tab-button-curso al cargar la página
+document.addEventListener('DOMContentLoaded', function() {
+    const firstTabButton = document.querySelector('.tab-button-curso');
+    if (firstTabButton) {
+        firstTabButton.click();
+    }
+});
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
 
 
 
