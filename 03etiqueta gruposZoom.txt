@@ -1,0 +1,103 @@
+<!--    :::::::::::::::::::::::::::::::::::::::::::::
+        :::             REUNIONES ZOOM            :::
+        :::::::::::::::::::::::::::::::::::::::::::::    
+          
+    Esta etiqueta se multiplicara por el numero de grupos con los  que cuenta el curso (ver cantidadd de grupos en la imagen de grupo), y el acceso a esta sera restringido por grupos de igual forma. Aun no se tienen grupos, por el momento solo multiplicar la etiqueta.
+
+    -->
+<div class="seccion_act" style="    min-width: -webkit-fill-available;">
+
+    <div class="sec_1" style="    min-width: -webkit-fill-available; font-align: left">
+
+
+
+        <div style="    display:  flex;align-items: center; justify-content: flex-start;">
+            <img src="https://citesems1.org/publicdata/0CursoVisual/img/CVD_ICO_VIDEO.png" style="max-width: 110px; padding-top: 10px;">
+            <p style="text-align:left; font-size: x-large;"> Reunión zoom. Grupo #</p>
+        </div>
+
+
+        <div style="background-color: #651E34; padding: 2.5px; margin-bottom: 10px;"></div>
+
+
+        <p style="text-align:left;"> El enlace para las reuniones es el siguiente: <a href="">reunión de Zoom</a> . </p>
+
+        <br>
+
+
+        <div style="    display:  flex;align-items: center; justify-content: flex-start;">
+            <img src="https://citesems1.org/publicdata/0CursoVisual/img/CVD_ICO_VIDEOCONFERENCIA.png" style="max-width: 110px; padding-top: 10px;">
+            <p style="text-align:left; font-size: x-large;"> Grabaciones de sesiones</p>
+        </div>
+
+
+        <div style="background-color: #651E34; padding: 2.5px; margin-bottom: 10px;"></div>
+
+
+        <br>
+        <div class="table-responsive">
+            <table class="table" style="width: 70% !important; margin: 0 auto;">
+                <thead style="text-align: center;color: #fff; background-color: #691C32; padding-left: 20px; padding-right: 20px; ">
+                    <tr>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Reunión zoom </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th scope="row"> 18 de mayo, 2024 </th>
+
+                        <td>
+                            <center> <a href="">Accede a la grabación </a> </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"> 25 de mayo, 2024 </th>
+
+                        <td>
+                            <!-- <center>  <a href="">Accede a la grabación </a> </center>-->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"> 01 de junio, 2024 </th>
+
+                        <td>
+                            <!-- <center>  <a href="">Accede a la grabación </a> </center>-->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"> 08 de junio, 2024 </th>
+
+                        <td>
+                            <!-- <center>  <a href="">Accede a la grabación </a> </center>-->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">15 de junio, 2024 </th>
+
+                        <td>
+                            <!-- <center>  <a href="">Accede a la grabación </a> </center>-->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"> 22 de junio, 2024 </th>
+
+                        <td>
+                            <!-- <center>  <a href="">Accede a la grabación </a> </center>-->
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
