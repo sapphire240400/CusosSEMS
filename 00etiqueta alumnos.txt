@@ -32,9 +32,9 @@
             sábados.</p>
         <p style="text-align: left;">Este plan de formación incluye seis sesiones sincrónicas programadas semanalmente, en las que tu facilitador o facilitadora fomentará el diálogo, el intercambio de experiencias y conocimientos, así como la reflexión sobre la práctica docente y los temas tratados semana a semana. </p>
 
-        <p style="text-align:left;"> Las sesiones se llevarán a cabo de <strong style="color: #611a2c;">10:00</strong> a <strong style="color: #611a2c;">12: 00</strong>&nbsp;horas en los días que se muestran en la siguiente tabla. Dichas sesiones serán grabadas y estarán disponibles en este mismo espacio. </p>
+        <p style="text-align:left;"> Las sesiones se llevarán a cabo de <strong style="color: #611a2c;">10:00</strong> a <strong style="color: #611a2c;">12: 00 (GMT-6)</strong>&nbsp;horas en los días que se muestran en la siguiente tabla. Dichas sesiones serán grabadas y estarán disponibles en este mismo espacio. </p>
 
-        <p> <a href="https://citesems1.org/publicdata/MATERIALES%20DE%20CADA%20CURSO/Indicaciones%20generales%20participantes.pdf" target="_blank">Más información</a></p>
+        <p style="text-align:center;"> <a href="https://citesems1.org/publicdata/MATERIALES%20DE%20CADA%20CURSO/Indicaciones%20generales%20participantes.pdf" target="_blank">Más información</a></p>
         <br>
 
 
